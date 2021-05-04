@@ -22,6 +22,4 @@ deploy:
   on:
       branch: main
 
-script:                                                                                                                                                                                                                                                                                             
-  - python -m unittest -v test                                                                                                                    
-  - echo "passei por aqui"
+script:                                                                                                                                                                              - python -m unittest -v test || travis_terminate 1;
