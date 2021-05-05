@@ -1,3 +1,5 @@
+version: ~> 1.0
+
 # Linguagem Utilizada para Desenvolver a Aplicação
 language: python
 
@@ -26,4 +28,4 @@ script:                                                                         
 
 notifications:
   slack:
-    on_success: change
+    on_success: never
