@@ -26,9 +26,3 @@ deploy:
 
 script:                                                                                                                                                                             
   - python -m unittest -v test
-
-notifications:
-  slack:
-    rooms:
-      secure: never
-       on_success: never
