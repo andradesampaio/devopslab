@@ -28,4 +28,7 @@ script:
   - python -m unittest -v test || travis_terminate 1;
 
 notifications:
-      messages: alert 
+  slack:
+    rooms:
+      secure: never
+       on_success: never
