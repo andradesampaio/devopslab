@@ -23,3 +23,7 @@ deploy:
       branch: main
 
 script:                                                                                                                                                                              - python -m unittest -v test || travis_terminate 1;
+
+notifications:
+  slack:
+    on_success: change
