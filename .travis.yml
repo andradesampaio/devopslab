@@ -1,8 +1,8 @@
 version: ~> 1.0
 # Linguagem Utilizada para Desenvolver a Aplicação
-language: python
 os: linux
 dist: xenial
+language: python
 
 # Versão que a aplicação suporta.
 python:
@@ -19,10 +19,9 @@ script:
 # Definir o Deploy no Heroku
 deploy:
   provider: heroku
-  strategy: api
   api_key: $HEROKU_API_KEY
+  strategy: api
   edge: true 
   app: devopslab-asampaio
   on:
       branch: main
-notifications: false
